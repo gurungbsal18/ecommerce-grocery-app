@@ -1,0 +1,22 @@
+.hero {
+  background: url(/image/hero-bg.jpg);
+  background-size: cover;
+  height: calc(100vh - 72px);
+}
+.hero-section {
+  height: calc(100vh - 72px);
+}
+
+.edit-icon {
+  background-color: #fff3cd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    fill: $dark;
+    font-size: 30px;
+  }
+}
