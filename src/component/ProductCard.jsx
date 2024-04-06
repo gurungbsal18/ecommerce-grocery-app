@@ -7,7 +7,7 @@ const ProductCard = () => {
     {
       id: 1,
       image: "/image/honey.png",
-      title: "Honey",
+      title: "Goraw Honey",
       price: "1080",
       badgeFeatured: "Featured",
       badgeBestSelling: "Best Selling",
@@ -15,7 +15,7 @@ const ProductCard = () => {
     {
       id: 2,
       image: "/image/honey-product.webp",
-      title: "Grocery",
+      title: "Tueney Raw Honey",
       price: "2090",
       badgeTopSeller: "Top Seller",
       badgeBestSelling: "Best Selling",
