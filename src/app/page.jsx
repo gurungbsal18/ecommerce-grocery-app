@@ -5,6 +5,7 @@ import { GiHoneypot } from "react-icons/gi";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import HeroSlider from "@/component/HeroSlider";
 import ProductCard from "@/component/ProductCard";
+import SalesBanner from "@/component/SalesBanner";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <div className="container my-5">
         <ProductCard />
       </div>
+      <SalesBanner/>
     </>
   );
 }
