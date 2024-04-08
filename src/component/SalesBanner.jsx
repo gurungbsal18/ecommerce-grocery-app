@@ -2,7 +2,7 @@ import React from 'react'
 
 const SalesBanner = () => {
   return (
-    <div className='alert alert-warning'>
+    <div className='alert alert-warning my-5'>
         <div className="container">
             <div className="row align-items-center justify-content-center">
                 <div className="col-auto">

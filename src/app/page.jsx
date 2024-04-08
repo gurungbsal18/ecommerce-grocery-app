@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container my-5">
+      <div className="container py-5 my-5">
         <ProductCard />
       </div>
       <SalesBanner/>
