@@ -15,10 +15,18 @@ const ProductCard = () => {
     {
       id: 2,
       image: "/image/honey-product.webp",
-      title: "Tueney Raw Honey",
+      title: "Trueney Raw Honey",
       price: "2090",
       badgeTopSeller: "Top Seller",
       badgeBestSelling: "Best Selling",
+    },
+    {
+      id: 3,
+      image: "/image/honey-product.webp",
+      title: "Organic Raw Honey",
+      price: "3090",
+      badgeTopSeller: "Top Seller",
+      badgeFeatured: "Featured",
     },
   ];
   return (
