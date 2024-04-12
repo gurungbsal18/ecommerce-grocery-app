@@ -1,7 +1,7 @@
 .hero {
   background: url(/image/hero-bg.jpg);
   background-size: cover;
-  height: calc(100vh - 72px);
+  min-height: calc(100vh - 72px);
 }
 .hero-section {
   height: calc(100vh - 72px);
