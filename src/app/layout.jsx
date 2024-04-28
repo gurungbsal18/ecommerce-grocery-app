@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../scss/custom-style.scss";
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/footer";
+import Notification from "@/component/Notification";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Notification />
       </body>
     </html>
   );

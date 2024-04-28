@@ -1,5 +1,4 @@
 "use client";
-import next from "next";
 import React, { useState } from "react";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { RiArrowDropLeftLine } from "react-icons/ri";

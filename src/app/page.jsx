@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Navbar from "@/component/Navbar";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { GiHoneypot } from "react-icons/gi";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -10,7 +8,6 @@ import SalesBanner from "@/component/SalesBanner";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <div className="hero py-4">
         <div className="container">
           <HeroSlider />
@@ -40,7 +37,7 @@ export default function Home() {
       <div className="container py-5 my-5">
         <ProductCard />
       </div>
-      <SalesBanner/>
+      <SalesBanner />
     </>
   );
 }
