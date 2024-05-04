@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -6,15 +7,25 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar">
           <div className="logo-img">
-            <img src="image/logo.svg" alt="" />
+            <Link href="/">
+              <img src="/image/logo.svg" alt="" />
+            </Link>
           </div>
           <div className="nav-items">
             <ul>
-              <li>Home</li>
-              <li>Products</li>
+              <Link href="/">
+                <li>Home</li>
+              </Link>
+              <Link href="/product-list">
+                <li>Products</li>
+              </Link>
               <li>About</li>
-              <li>Contact</li>
-              <li>Cart</li>
+              <Link href="/contact">
+                <li>Contact</li>
+              </Link>
+              <Link href="cart">
+                <li>Cart</li>
+              </Link>
             </ul>
           </div>
         </div>

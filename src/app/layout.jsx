@@ -3,8 +3,8 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../scss/custom-style.scss";
 import Navbar from "@/component/Navbar";
-import Footer from "@/component/footer";
 import Notification from "@/component/Notification";
+import Footer from "@/component/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
