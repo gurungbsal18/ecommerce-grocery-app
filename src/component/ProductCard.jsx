@@ -1,5 +1,5 @@
 "use client";
-import { product } from "@/utils/product";
+import { ProductList } from "@/utils/product";
 import React, { useState } from "react";
 import { Badge } from "react-bootstrap";
 import { FaCartPlus } from "react-icons/fa";
@@ -33,15 +33,22 @@ const ProductCard = () => {
   //   },
   // ];
 
+  const productIdsToShow = [1, 2, 3];
+
+  // Filter ProductList based on the productIdsToShow
+  const filteredProducts = ProductList.filter((product) =>
+    productIdsToShow.includes(product.id)
+  );
+
   const cartBtn = () => {
     toast.success("Product Added");
   };
 
   return (
     <div className="row">
-      {product.map((list, index) => (
+      {filteredProducts.map((list, index) => (
         <div key={index} className="col-4">
-          <div className="card product-card">
+          <div className="card product-card my-3">
             <div key={list.id}>
               <img src={list.image} alt={list.title} />
               <div className="card-body">

@@ -1,4 +1,4 @@
-export const product = [
+export const ProductList = [
   {
     id: 1,
     image: "/image/honey.png",
@@ -17,6 +17,22 @@ export const product = [
   },
   {
     id: 3,
+    image: "/image/honey-product.webp",
+    title: "Organic Raw Honey",
+    price: "3090",
+    badgeTopSeller: "Top Seller",
+    badgeFeatured: "Featured",
+  },
+  {
+    id: 4,
+    image: "/image/honey-product.webp",
+    title: "Organic Raw Honey",
+    price: "3090",
+    badgeTopSeller: "Top Seller",
+    badgeFeatured: "Featured",
+  },
+  {
+    id: 5,
     image: "/image/honey-product.webp",
     title: "Organic Raw Honey",
     price: "3090",
