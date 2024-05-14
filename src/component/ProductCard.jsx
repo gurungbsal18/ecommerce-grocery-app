@@ -45,9 +45,9 @@ const ProductCard = () => {
   };
 
   return (
-    <div className="row">
+    <div className="row flex-column flex-md-row">
       {filteredProducts.map((list, index) => (
-        <div key={index} className="col-4">
+        <div key={index} className="col-12 col-lg-6 col-xl-4">
           <div className="card product-card my-3">
             <div key={list.id}>
               <img src={list.image} alt={list.title} />

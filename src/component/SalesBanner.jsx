@@ -15,7 +15,7 @@ const SalesBanner = () => {
             </p>
             <button className="btn btn-sm btn-dark">View Detail</button>
           </div>
-          <div className="col-4">
+          <div className="col-12 col-md-4">
             <img src="/image/honey.png" alt="" className="mw-100" />
           </div>
         </div>

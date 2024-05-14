@@ -14,9 +14,16 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-size: 76px;
+  @media (max-width: 576px) {
+    font-size: 70px;
+  }
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+
+.fs-12 {
+  font-size: 12px;
 }

@@ -55,18 +55,15 @@ const HeroSlider = () => {
               key={list.id}
               className={
                 index === currentSlide
-                  ? "slider-item active d-flex justify-content-between"
+                  ? "slider-item active d-flex flex-column-reverse flex-md-row justify-content-between gap-5 gap-sm-2"
                   : "slider-item"
               }
             >
-              <div className="">
-                <div
-                  className="d-flex justify-content-start align-items-start flex-column"
-                  style={{ textAlign: "left" }}
-                >
+              <div className="slider-text">
+                <div className="d-flex justify-content-start align-items-start flex-column">
                   <span className="text-muted">{list.subtitle}</span>
                   <h1 className="heading">{list.title}</h1>
-                  <div className="d-flex gap-2">
+                  <div className="d-flex gap-2 slider-button">
                     <span
                       role="button"
                       onClick={prevSlide}

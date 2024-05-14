@@ -10,7 +10,7 @@ const page = () => {
   };
   return (
     <div>
-      <div className="container">
+      <div className="container my-5">
         <div className="d-flex align-items-center gap-2 my-4">
           <input
             type="text"
@@ -21,7 +21,7 @@ const page = () => {
         </div>
         <div className="row">
           {ProductList.map((list, index) => (
-            <div className="col-4">
+            <div className="col-12 col-lg-6 col-xl-4">
               <div className="card product-card my-3">
                 <div key={list.id}>
                   <img src={list.image} alt={list.title} />

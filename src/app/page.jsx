@@ -12,20 +12,20 @@ export default function Home() {
         <div className="container">
           <HeroSlider />
 
-          <div className="bg-warning rounded p-4 row justify-content-center my-4">
-            <div className="col-4 d-flex flex-column align-items-center gap-2">
+          <div className="bg-warning rounded p-4 row justify-content-center align-items-center my-4 flex-column flex-md-row gap-5 gap-md-0">
+            <div className="col-12 col-md-4 d-flex flex-column align-items-center gap-2">
               <span className="edit-icon">
                 <CiDeliveryTruck />
               </span>
               <span>Free Delivery</span>
             </div>
-            <div className="col-4 d-flex flex-column align-items-center gap-2">
+            <div className="col-12 col-md-4 d-flex flex-column align-items-center gap-2">
               <span className="edit-icon">
                 <GiHoneypot />
               </span>
               <span>100% Organic Product</span>
             </div>
-            <div className="col-4 d-flex flex-column align-items-center gap-2">
+            <div className="col-12 col-md-4 d-flex flex-column align-items-center gap-2">
               <span className="edit-icon">
                 <RiSecurePaymentLine />
               </span>
@@ -35,6 +35,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container py-5 my-5">
+        <h4 className="title text-center">Our Best Selling Products</h4>
         <ProductCard />
       </div>
       <SalesBanner />

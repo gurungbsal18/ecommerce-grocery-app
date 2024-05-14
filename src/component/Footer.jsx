@@ -15,9 +15,9 @@ const Footer = () => {
         <p className="">info@honeybee.com | +977 9851055040</p>
       </div>
       <div className="bg-warning py-2">
-        <div className="container  d-flex justify-content-between">
-          <p className="m-0">&copy; Honey Bee 2024</p>
-          <p className="m-0">Develop By: IT Sansaar</p>
+        <div className="container d-flex justify-content-between">
+          <p className="m-0 fs-12">&copy; Honey Bee 2024</p>
+          <p className="m-0 fs-12">Develop By: IT Sansaar</p>
         </div>
       </div>
     </div>

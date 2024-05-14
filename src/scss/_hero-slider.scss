@@ -16,10 +16,28 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-
+    .slider-text {
+      text-align: left;
+      @media (max-width: 576px) {
+        span {
+          margin: 0 auto;
+        }
+        text-align: center;
+      }
+    }
     img {
       max-width: 600px;
       height: 600px;
+      @media (max-width: 576px) {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      @media (max-width: 1024px) {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
     }
 
     h2 {
@@ -34,6 +52,11 @@
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+    }
+    .slider-button {
+      @media (max-width: 576px) {
+        margin: 0 auto;
+      }
     }
   }
 

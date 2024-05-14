@@ -1,7 +1,12 @@
 .hero {
   background: url(/image/hero-bg.jpg);
   background-size: cover;
-  min-height: calc(100vh - 72px);
+  // min-height: calc(100vh - 72px);
+  min-height: 400px;
+  @media (max-width: 1024px) {
+    height: auto;
+    min-height: 400px;
+  }
 }
 .hero-section {
   height: calc(100vh - 72px);
