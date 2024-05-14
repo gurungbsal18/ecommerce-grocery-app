@@ -27,3 +27,16 @@
     }
   }
 }
+
+.navbar {
+  a {
+    text-decoration: none;
+    color: #202222;
+    &:hover {
+      color: #d62727;
+    }
+    &:active {
+      color: #d62727;
+    }
+  }
+}

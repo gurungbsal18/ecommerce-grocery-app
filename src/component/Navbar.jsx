@@ -3,23 +3,18 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 
-// const [menu, setMenu] = useState("false");
-
-const menuToggle = () => {
-  const navItems = document.querySelector(".nav-items");
-  const menuItems = document.querySelector(".menu-items");
-  if (menuItems.classList.contains("d-none")) {
-    navItems.classList.remove("d-none");
-    menuItems.classList.remove("d-none");
-    menuItems.classList.add("d-flex");
-  } else {
-    menuItems.classList.remove("d-flex");
-    menuItems.classList.add("d-none");
-    navItems.classList.add("d-none");
-  }
-};
-
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const menuToggle = () => {
+    setMenuOpen(!menuOpen);
+    console.log("test");
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className="border-bottom">
       <div className="container">
@@ -33,20 +28,36 @@ const Navbar = () => {
             onClick={menuToggle}
             className="menu-icon d-block d-md-none"
           />
-          <div className="nav-items d-none d-md-block">
-            <ul className="menu-items d-none d-md-inline-flex">
+          <div
+            className={`nav-items d-md-block ${menuOpen ? "d-flex" : "d-none"}`}
+          >
+            <ul
+              className={`menu-items d-md-inline-flex ${
+                menuOpen ? "d-md-inline-flex" : "d-none"
+              }`}
+            >
               <Link href="/">
-                <li>Home</li>
+                <li className="menu-links" onClick={closeMenu}>
+                  Home
+                </li>
               </Link>
               <Link href="/product-list">
-                <li>Products</li>
+                <li className="menu-links" onClick={closeMenu}>
+                  Products
+                </li>
               </Link>
-              <li>About</li>
+              <li className="menu-links" onClick={closeMenu}>
+                About
+              </li>
               <Link href="/contact">
-                <li>Contact</li>
+                <li className="menu-links" onClick={closeMenu}>
+                  Contact
+                </li>
               </Link>
               <Link href="cart">
-                <li>Cart</li>
+                <li className="menu-links" onClick={closeMenu}>
+                  Cart
+                </li>
               </Link>
             </ul>
           </div>
