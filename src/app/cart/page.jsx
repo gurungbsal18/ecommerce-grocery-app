@@ -1,7 +1,23 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { MdDelete } from "react-icons/md";
 
 const page = () => {
+  const [name, setName] = useState();
+  const [nameList, setNameList] = useState();
+  const [phoneNumber, setPhoneNumber] = useState();
+  const [phoneNumberList, setPhoneNumberList] = useState();
+  const [address, setAddress] = useState();
+  const [addressList, setAddressList] = useState();
+
+  const getValue = () => {
+    setNameList([...nameList, name]);
+    setPhoneNumberList([...phoneNumberList, phoneNumber]);
+    setAddressList([...addressList, address]);
+    setName("");
+    setPhoneNumber("");
+    setAddress("");
+  };
   return (
     <div>
       <div className="container">
@@ -61,25 +77,30 @@ const page = () => {
                   type="text"
                   placeholder="full name"
                   className="form-control"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
                 <label htmlFor="">Phone Number</label>
                 <input
                   type="number"
                   placeholder="Phone Number"
                   className="form-control"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
                 />
                 <label htmlFor="">Address</label>
                 <input
                   type="text"
                   placeholder="Address"
                   className="form-control"
+                  onChange={(e) => setAddress(e.target.value)}
                 />
                 <span>
                   <input type="checkbox" className="me-2" />
                   <label htmlFor="">Cash on delivery</label>
                 </span>
 
-                <div className="">
+                <div className="d-flex justify-content-end">
                   <button className="btn btn-sm btn-dark" type="submit">
                     Submit
                   </button>
@@ -90,9 +111,9 @@ const page = () => {
               <h4>Details</h4>
               <div className="border all-shadow rounded p-3">
                 <p className="fw-bold">Items:</p>
-                <p>Name:</p>
-                <p>Phone Number:</p>
-                <p>Address:</p>
+                <p>Name: {name}</p>
+                <p>Phone Number: {phoneNumber}</p>
+                <p>Address: {address}</p>
                 <p>Total Price: </p>
               </div>
             </div>

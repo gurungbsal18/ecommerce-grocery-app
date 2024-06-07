@@ -5,7 +5,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <div className="container d-flex align-items-center gap-3 flex-column justify-content-center">
+      <div className="container d-flex align-items-center gap-3 flex-column justify-content-center mt-5">
         <img src="/image/logo.svg" style={{ width: "150px" }} />
         <span className="d-flex align-items-center mt-2 gap-2">
           <FaFacebook size={24} />

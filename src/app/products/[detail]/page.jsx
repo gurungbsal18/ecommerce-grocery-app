@@ -1,16 +1,29 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { productDetail, productReview } from "./db";
+import { FaStar } from "react-icons/fa";
 
 const page = () => {
+  const [showDescription, setShowDescription] = useState(true);
+
+  // const productDetailBtn = () => {
+  //   setShowDescription(true);
+  // };
+
+  // const reviewBtn = () => {
+  //   setShowDescription(false);
+  // };
+
   return (
     <div className="">
       <div className="container">
-        <p className="my-5">Breadcrumb</p>
-        <div className="row">
+        {/* <p className="my-5">Breadcrumb</p> */}
+        <div className="row mt-5">
           <div className="col-6">
             <img src="/image/honey.png" alt="" className="w-100" />
           </div>
           <div className="col-6">
-            <p>Category name</p>
+            <p className="badge text-bg-success">Category name</p>
             <h4>Title Name</h4>
             <p>Reviews</p>
             <h4>Price: NRs 1500/-</h4>
@@ -43,8 +56,51 @@ const page = () => {
         {/* product detail section */}
         <hr />
         <div className="d-flex gap-3">
-          <button className="btn btn-sm btn-dark">Description</button>
-          <button className="btn btn-sm btn-dark">Reviews</button>
+          <button
+            className={`btn btn-sm ${
+              showDescription ? "btn-dark" : "btn-outline-dark"
+            }`}
+            onClick={() => {
+              setShowDescription(true);
+            }}
+          >
+            Product Detail
+          </button>
+          <button
+            className={`btn btn-sm ${
+              showDescription ? "btn-outline-dark" : "btn-dark"
+            }`}
+            onClick={() => {
+              setShowDescription(false);
+            }}
+          >
+            Reviews
+          </button>
+        </div>
+
+        <div className="my-3">
+          {showDescription
+            ? productDetail.map((list, index) => (
+                <div key={index}>
+                  <p>{list.description1}</p>
+                  <p>{list.description2}</p>
+                </div>
+              ))
+            : productReview.map((list, id) => (
+                <div key={id}>
+                  {/* <img src={list.user1} alt="" width={50} height={50} /> */}
+                  <div className="bg-light rounded shadow-sm p-4 my-5">
+                    <h4 className="m-0">{list.username}</h4>
+                    <span>
+                      {" "}
+                      {Array.from({ length: list.userrating }, (_, i) => (
+                        <FaStar key={i} color="gold" />
+                      ))}
+                    </span>
+                    <p className="mt-2">{list.userreview}</p>
+                  </div>
+                </div>
+              ))}
         </div>
       </div>
     </div>

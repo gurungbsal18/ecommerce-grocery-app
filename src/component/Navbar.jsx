@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,7 +56,11 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link href="cart">
-                <li className="menu-links" onClick={closeMenu}>
+                <li
+                  className="menu-links d-flex gap-1 align-items-center"
+                  onClick={closeMenu}
+                >
+                  <FaShoppingCart />
                   Cart
                 </li>
               </Link>
