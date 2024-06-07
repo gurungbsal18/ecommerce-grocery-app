@@ -8,7 +8,7 @@ import SalesBanner from "@/component/SalesBanner";
 export default function Home() {
   return (
     <>
-      <div className="hero py-4">
+      <div className="hero pt-4 pb-0 py-md-4">
         <div className="container">
           <HeroSlider />
 

@@ -59,7 +59,7 @@ const SalesCountDown = () => {
   return (
     <div>
       <p className="badge bg-danger">Sales Ends On</p>
-      <p>
+      <p className="text-danger">
         {timeLeft.days} days {timeLeft.hours} hours {timeLeft.minutes} minutes{" "}
         {timeLeft.seconds} seconds
       </p>

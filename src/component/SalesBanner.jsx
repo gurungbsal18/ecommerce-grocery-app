@@ -1,5 +1,6 @@
 import React from "react";
 import SalesCountDown from "./SalesCountDown";
+import Link from "next/link";
 
 const SalesBanner = () => {
   return (
@@ -13,7 +14,9 @@ const SalesBanner = () => {
               Get ready to snag incredible deals before they vanish! Limited
               time only, so hurry!
             </p>
-            <button className="btn btn-sm btn-dark">View Detail</button>
+            <Link href="products/a">
+              <button className="btn btn-sm btn-dark">View Detail</button>
+            </Link>
           </div>
           <div className="col-12 col-md-4">
             <img src="/image/honey.png" alt="" className="mw-100" />
