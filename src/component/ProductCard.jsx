@@ -55,7 +55,10 @@ const ProductCard = () => {
                 <h4 className="card-title">{list.title}</h4>
                 <div className="d-flex justify-content-between align-items-center">
                   <p className="m-0">Price: NRs {list.price} /-</p>
-                  <button className="btn btn-warning" onClick={cartBtn}>
+                  <button
+                    className="btn btn-warning d-flex align-items-center"
+                    onClick={cartBtn}
+                  >
                     <FaCartPlus className="me-2" />
                     Add to cart
                   </button>
