@@ -25,46 +25,52 @@ const Navbar = () => {
               <img src="/image/logo.svg" alt="" />
             </Link>
           </div>
-          <IoMenu
-            onClick={menuToggle}
-            className="menu-icon d-block d-md-none"
-          />
-          <div
-            className={`nav-items d-md-block ${menuOpen ? "d-flex" : "d-none"}`}
-          >
-            <ul
-              className={`menu-items d-md-inline-flex ${
-                menuOpen ? "d-md-inline-flex" : "d-none"
+          <div className="d-flex align-items-center gap-3">
+            <IoMenu
+              onClick={menuToggle}
+              className="menu-icon d-block d-md-none"
+            />
+            <div
+              className={`nav-items d-md-block ${
+                menuOpen ? "d-flex" : "d-none"
               }`}
             >
-              <Link href="/">
-                <li className="menu-links" onClick={closeMenu}>
-                  Home
-                </li>
-              </Link>
-              <Link href="/product-list">
-                <li className="menu-links" onClick={closeMenu}>
-                  Products
-                </li>
-              </Link>
-              <li className="menu-links" onClick={closeMenu}>
-                About
-              </li>
-              <Link href="/contact">
-                <li className="menu-links" onClick={closeMenu}>
-                  Contact
-                </li>
-              </Link>
+              <ul
+                className={`menu-items d-md-inline-flex  m-0 ${
+                  menuOpen ? "d-md-inline-flex" : "d-none"
+                }`}
+              >
+                <Link href="/">
+                  <li className="menu-links" onClick={closeMenu}>
+                    Home
+                  </li>
+                </Link>
+                <Link href="/product-list">
+                  <li className="menu-links" onClick={closeMenu}>
+                    Products
+                  </li>
+                </Link>
+                {/* <li className="menu-links" onClick={closeMenu}>
+                  About
+                </li> */}
+                <Link href="/contact">
+                  <li className="menu-links" onClick={closeMenu}>
+                    Contact
+                  </li>
+                </Link>
+              </ul>
+            </div>
+            <span>
               <Link href="cart">
-                <li
+                <span
                   className="menu-links d-flex gap-1 align-items-center"
                   onClick={closeMenu}
                 >
                   <FaShoppingCart />
                   Cart
-                </li>
+                </span>
               </Link>
-            </ul>
+            </span>
           </div>
         </div>
       </div>
