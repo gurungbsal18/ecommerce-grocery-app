@@ -18,11 +18,11 @@ const page = () => {
     <div className="">
       <div className="container">
         {/* <p className="my-5">Breadcrumb</p> */}
-        <div className="row mt-5">
-          <div className="col-6">
+        <div className="row d-flex flex-column flex-md-row mt-5">
+          <div className="col-12 col-md-6">
             <img src="/image/honey.png" alt="" className="w-100" />
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <p className="badge text-bg-success">Category name</p>
             <h4>Title Name</h4>
             <p>Reviews</p>

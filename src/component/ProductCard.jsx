@@ -65,13 +65,13 @@ const ProductCard = () => {
                 </div>
                 <div className="product-badge d-flex gap-2">
                   <span className="badge text-bg-warning">
-                    {list.badgeFeatured}
+                    {list?.badgeFeatured}
                   </span>
                   <span className="badge text-bg-danger">
-                    {list.badgeTopSeller}
+                    {list?.badgeTopSeller}
                   </span>
                   <span className="badge text-bg-success">
-                    {list.badgeBestSelling}
+                    {list?.badgeBestSelling}
                   </span>
                 </div>
               </div>

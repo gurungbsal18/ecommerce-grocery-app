@@ -32,7 +32,7 @@ const SalesCountDown = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
-    const difference = +new Date("August 9, 2024 15:37:25") - +new Date();
+    const difference = +new Date("June 10, 2024 00:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
