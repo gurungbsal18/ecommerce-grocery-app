@@ -6,6 +6,7 @@ export const ProductList = [
     price: "1080",
     badgeFeatured: "Featured",
     badgeBestSelling: "Best Selling",
+    link: "/products/a",
   },
   {
     id: 2,
@@ -14,6 +15,8 @@ export const ProductList = [
     price: "2090",
     badgeTopSeller: "Top Seller",
     badgeBestSelling: "Best Selling",
+
+    link: "/products/b",
   },
   {
     id: 3,
@@ -22,6 +25,7 @@ export const ProductList = [
     price: "3090",
     badgeTopSeller: "Top Seller",
     badgeFeatured: "Featured",
+    link: "/products/c",
   },
   {
     id: 4,
@@ -30,6 +34,8 @@ export const ProductList = [
     price: "3090",
     badgeTopSeller: "Top Seller",
     badgeFeatured: "Featured",
+
+    link: "/products/d",
   },
   {
     id: 5,
@@ -38,5 +44,6 @@ export const ProductList = [
     price: "3090",
     badgeTopSeller: "Top Seller",
     badgeFeatured: "Featured",
+    link: "/products/e",
   },
 ];

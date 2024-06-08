@@ -5,8 +5,18 @@
     height: 400px;
     object-fit: cover;
   }
+  .card-title {
+    color: #664d03;
+    text-decoration: none;
+    &:hover {
+      color: $success;
+    }
+  }
   .card-body {
     padding: 16px;
+    a {
+      text-decoration: none;
+    }
   }
 }
 
