@@ -114,7 +114,7 @@ const page = () => {
                 <p>Name: {name}</p>
                 <p>Phone Number: {phoneNumber}</p>
                 <p>Address: {address}</p>
-                <p>Total Price: </p>
+                <p className="fw-bold">Total Price: NRs 2400/- </p>
               </div>
             </div>
           </div>
