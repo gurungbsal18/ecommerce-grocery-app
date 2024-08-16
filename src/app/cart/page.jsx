@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { MdDelete } from "react-icons/md";
 
-const page = () => {
+const Page = () => {
   const [name, setName] = useState();
   const [nameList, setNameList] = useState();
   const [phoneNumber, setPhoneNumber] = useState();
@@ -124,4 +124,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
