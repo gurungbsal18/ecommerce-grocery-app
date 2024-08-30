@@ -3,8 +3,9 @@ import React from "react";
 import { ProductList } from "@/utils/product";
 import { FaCartPlus } from "react-icons/fa";
 import { toast } from "react-toastify";
+import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const cartBtn = () => {
     toast.success("Product Added");
   };
@@ -21,10 +22,10 @@ const page = () => {
         </div>
         <div className="row">
           {ProductList.map((list, index) => (
-            <div className="col-12 col-lg-6 col-xl-4">
+            <div className="col-12 col-lg-6 col-xl-4" key={list.id}>
               <div className="card product-card my-3">
-                <div key={list.id}>
-                  <img src={list.image} alt={list.title} />
+                <div>
+                  <Image src={list.image} alt={list.title} />
                   <div className="card-body">
                     <h4 className="card-title">{list.title}</h4>
                     <div className="d-flex justify-content-between align-items-center">
@@ -56,4 +57,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

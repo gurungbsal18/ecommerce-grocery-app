@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import { productDetail, productReview } from "./db";
 import { FaStar } from "react-icons/fa";
+import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const [showDescription, setShowDescription] = useState(true);
 
   // const productDetailBtn = () => {
@@ -20,7 +21,14 @@ const page = () => {
         {/* <p className="my-5">Breadcrumb</p> */}
         <div className="row d-flex flex-column flex-md-row mt-5">
           <div className="col-12 col-md-6">
-            <img src="/image/honey.png" alt="" className="w-100" />
+            <Image
+              src="/image/honey.png"
+              alt="honey"
+              layout="responsive"
+              width={500}
+              height={500}
+              style={{ width: "100px", height: "100px" }}
+            />
           </div>
           <div className="col-12 col-md-6">
             <p className="badge text-bg-success">Category name</p>
@@ -107,4 +115,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { MdDelete } from "react-icons/md";
 
@@ -37,7 +38,12 @@ const Page = () => {
             <tbody>
               <tr>
                 <td>
-                  <img src="/image/honey.png" />
+                  <Image
+                    src={"/image/honey.png"}
+                    alt="honey"
+                    width={200}
+                    height={200}
+                  />
                 </td>
                 <td>Product 1</td>
                 <td width={250}>NRs 1200</td>
@@ -51,7 +57,12 @@ const Page = () => {
               </tr>
               <tr>
                 <td>
-                  <img src="/image/honey.png" />
+                  <Image
+                    src={"/image/honey.png"}
+                    alt="honey"
+                    width={200}
+                    height={200}
+                  />
                 </td>
                 <td>Product 2</td>
                 <td width={250}>NRs 1200</td>

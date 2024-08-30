@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
+import Image from "next/image";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,13 @@ const Navbar = () => {
         <div className="navbar">
           <div className="logo-img">
             <Link href="/">
-              <img src="/image/logo.svg" alt="" />
+              <Image
+                src={"/image/logo.svg"}
+                alt="logo"
+                layout="responsive"
+                width={50}
+                height={50}
+              />
             </Link>
           </div>
           <div className="d-flex align-items-center gap-3">
