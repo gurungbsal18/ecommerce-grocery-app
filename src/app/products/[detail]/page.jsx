@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { productDetail, productReview } from "./db";
 import { FaStar } from "react-icons/fa";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Page = () => {
   const [showDescription, setShowDescription] = useState(true);
@@ -21,13 +21,14 @@ const Page = () => {
         {/* <p className="my-5">Breadcrumb</p> */}
         <div className="row d-flex flex-column flex-md-row mt-5">
           <div className="col-12 col-md-6">
-            <Image
+            <img
               src="/image/honey.png"
               alt="honey"
-              layout="responsive"
-              width={500}
-              height={500}
-              style={{ width: "100px", height: "100px" }}
+              // layout="fill"
+              // objectFit="cover"
+              // width={500}
+              // height={500}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
           <div className="col-12 col-md-6">
